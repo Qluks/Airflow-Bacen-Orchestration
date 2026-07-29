@@ -1,0 +1,15 @@
+# Airflow runtime — gerado localmente, não versionar
+logs/
+plugins/
+*.pyc
+__pycache__/
+
+# Dados do pipeline (mesma lógica do projeto original: bronze/silver fora, gold dentro)
+data/bronze/
+data/silver/
+
+# Segredos / ambiente
+.env
+
+# Postgres/Redis do Airflow (se algum volume vazar pra fora do Docker)
+postgres-db-volume/
