@@ -13,3 +13,6 @@ data/silver/
 
 # Postgres/Redis do Airflow (se algum volume vazar pra fora do Docker)
 postgres-db-volume/
+
+# Config gerada automaticamente pelo Airflow — nunca versionar (contém a Fernet key)
+config/airflow.cfg
